@@ -1,0 +1,16 @@
+[Unit]
+Description=addok
+After=syslog.target network.target redis.service
+
+[Service]
+Type=simple
+User=addok
+ExecStart=/srv/addok/venv/bin/gunicorn addok.http.wsgi --config gunicorn.conf
+WorkingDirectory=/srv/addok/
+Restart=always
+RestartSec=5
+StandardOutput=journal
+SyslogIdentifier=addok
+
+[Install]
+WantedBy=default.target

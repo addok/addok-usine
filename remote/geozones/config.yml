@@ -1,0 +1,7 @@
+data_uri: https://www.data.gouv.fr/fr/datasets/r/361841d7-4647-4e1b-ad7b-4f4c53512b55
+domain: geozones.space
+settings: remote/geozones/addok.conf
+packages:
+- addok
+- addok-trigrams
+- git+https://github.com/addok/addok-geozones

@@ -1,0 +1,7 @@
+data_uri: https://raw.githubusercontent.com/addok/addok-idcc/master/idcc.csv
+domain: idcc.space
+settings: remote/idcc/addok.conf
+packages:
+- git+https://github.com/addok/addok
+- addok-trigrams
+- git+https://github.com/addok/addok-idcc
