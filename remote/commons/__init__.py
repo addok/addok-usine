@@ -88,6 +88,11 @@ def service():
 
 
 @minicli.cli
+def reset():
+    addok('reset')
+
+
+@minicli.cli
 def deploy():
     pip(f'install {" ".join(config.packages)} gunicorn --upgrade')
     put(str(config.settings), '/etc/addok/addok.conf')
